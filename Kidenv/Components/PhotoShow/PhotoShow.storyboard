@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Show Controller-->
+        <scene sceneID="wAW-D3-yw7">
+            <objects>
+                <viewController storyboardIdentifier="PhotoShow" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nz9-r6-euN" customClass="PhotoShowController" customModule="Kidenv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vx6-OE-v7F"/>
+                        <viewControllerLayoutGuide type="bottom" id="ijO-ca-vH6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8ZN-yp-vqC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TlG-7Y-Hym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-728" y="-2"/>
+        </scene>
+        <!--Photo Preview Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PhotoPreview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PhotoPreviewController" customModule="Kidenv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bvz-Lc-PMd"/>
+                        <viewControllerLayoutGuide type="bottom" id="M9v-At-sWr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3dL-5N-TuB">
+                                <rect key="frame" x="0.0" y="67" width="390" height="723"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJZ-U8-Jrs">
+                                <rect key="frame" x="320" y="67" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="i7l-lo-EV6"/>
+                                    <constraint firstAttribute="width" secondItem="XJZ-U8-Jrs" secondAttribute="height" multiplier="1:1" id="kcn-Sp-BcC"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gJp-dY-hwz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XJZ-U8-Jrs" firstAttribute="top" secondItem="bvz-Lc-PMd" secondAttribute="bottom" constant="20" id="5LY-SZ-Yvl"/>
+                            <constraint firstAttribute="trailing" secondItem="3dL-5N-TuB" secondAttribute="trailing" id="70S-ye-sKG"/>
+                            <constraint firstItem="3dL-5N-TuB" firstAttribute="top" secondItem="bvz-Lc-PMd" secondAttribute="bottom" constant="20" id="FRs-dE-Pay"/>
+                            <constraint firstAttribute="trailing" secondItem="XJZ-U8-Jrs" secondAttribute="trailing" constant="20" id="IgP-nc-rjN"/>
+                            <constraint firstItem="M9v-At-sWr" firstAttribute="top" secondItem="3dL-5N-TuB" secondAttribute="bottom" constant="20" id="MDT-Qe-e10"/>
+                            <constraint firstItem="3dL-5N-TuB" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="n2j-Qs-ZFg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="3dL-5N-TuB" id="nBY-Hs-YNQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="150" height="150"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

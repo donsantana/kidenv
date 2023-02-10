@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallpaper View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="wallpaperViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" keyboardType="off" id="Y6W-OH-hqX" customClass="WallpaperViewController" customModule="kiddoing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VI4-Rd-ToM"/>
+                        <viewControllerLayoutGuide type="bottom" id="kme-bk-Qki"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btl-RJ-zht">
+                                <rect key="frame" x="0.0" y="114" width="393" height="668"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ial-gJ-2iu">
+                                <rect key="frame" x="166.66666666666666" y="717" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="bpx-pt-RN6"/>
+                                    <constraint firstAttribute="height" constant="60" id="pGS-BP-A8J"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="checkBtn"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrc-Ze-ZoD">
+                                <rect key="frame" x="332" y="69" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yrc-Ze-ZoD" secondAttribute="height" multiplier="1:1" id="0xn-KM-QQi"/>
+                                    <constraint firstAttribute="height" constant="35" id="IwM-MA-2u5"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ehg-oI-8ku"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nQV-Pk-cxr">
+                                <rect key="frame" x="10" y="782" width="373" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="uuw-BC-q82"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.068087771529999994" green="0.1823628843" blue="0.4941481948" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ial-gJ-2iu" firstAttribute="bottom" secondItem="btl-RJ-zht" secondAttribute="bottom" constant="-5" id="1JY-mh-nUK"/>
+                            <constraint firstItem="nQV-Pk-cxr" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="10" id="3QV-v3-lAP"/>
+                            <constraint firstItem="btl-RJ-zht" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="7g8-pT-clm"/>
+                            <constraint firstAttribute="trailing" secondItem="btl-RJ-zht" secondAttribute="trailing" id="IAd-ev-hCT"/>
+                            <constraint firstItem="yrc-Ze-ZoD" firstAttribute="top" secondItem="VI4-Rd-ToM" secondAttribute="bottom" constant="10" id="JqA-bC-7Rk"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nQV-Pk-cxr" secondAttribute="bottom" constant="10" id="K1D-Dz-qvQ"/>
+                            <constraint firstItem="yrc-Ze-ZoD" firstAttribute="width" secondItem="yrc-Ze-ZoD" secondAttribute="height" multiplier="1:1" id="UE5-yw-6ew"/>
+                            <constraint firstItem="btl-RJ-zht" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="acH-ID-1g4"/>
+                            <constraint firstItem="btl-RJ-zht" firstAttribute="top" secondItem="yrc-Ze-ZoD" secondAttribute="bottom" constant="10" id="cC5-jY-BE9"/>
+                            <constraint firstAttribute="trailing" secondItem="nQV-Pk-cxr" secondAttribute="trailing" constant="10" id="dcd-Gg-hIG"/>
+                            <constraint firstAttribute="trailing" secondItem="btl-RJ-zht" secondAttribute="trailing" id="ear-H9-KI3"/>
+                            <constraint firstItem="nQV-Pk-cxr" firstAttribute="top" secondItem="btl-RJ-zht" secondAttribute="bottom" id="gDP-gw-bRY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yrc-Ze-ZoD" secondAttribute="trailing" constant="10" id="yoW-jU-MHU"/>
+                            <constraint firstItem="Ial-gJ-2iu" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="zZ5-V8-TWH"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="checkBtn" destination="Ial-gJ-2iu" id="02z-5A-Hxh"/>
+                        <outlet property="wallpaperContentView" destination="btl-RJ-zht" id="2JE-ds-hl7"/>
+                        <outlet property="wallpaperPageControll" destination="nQV-Pk-cxr" id="f9f-o4-scQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkBtn" width="200" height="200"/>
+        <image name="close" width="150" height="150"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

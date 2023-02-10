@@ -1,0 +1,27 @@
+//
+//  GlobalStrings.swift
+//  kiddoing
+//
+//  Created by Donelkys Santana on 11/13/22.
+//
+
+import Foundation
+
+struct GlobalStrings {
+	static let showTutorialTitle: String = NSLocalizedString("How to active Guide Access?",comment:"")
+	///Buttons images
+	static let settingsBtnTitle: String = NSLocalizedString("settings",comment:"")
+	static let accessibilityBtnTitle: String = NSLocalizedString("accessibility",comment:"")
+	static let guideAccessBtnTitle: String = NSLocalizedString("guideAccess",comment:"")
+	static let passcodeBtnTitle: String = NSLocalizedString("passcode",comment:"")
+	static let passcodeScreenBtnTitle: String = NSLocalizedString("passcodeScreen",comment:"")
+	static let deviceSwitchBtnTitle: String = NSLocalizedString("deviceSwitch",comment:"")
+	
+	///Wallpaper images
+	struct WallpapersImages {
+		static let mickeyImage: String = NSLocalizedString("mickey",comment:"")
+		static let minieImage: String = NSLocalizedString("minie",comment:"")
+		static let defaultImage: String = NSLocalizedString("default",comment:"")
+		static let minionsImage: String = NSLocalizedString("minions",comment:"")
+	}
+}
