@@ -20,6 +20,11 @@ extension PhotoShotController: UINavigationControllerDelegate, UIImagePickerCont
 		imagePreview.contentMode = .scaleAspectFit
 	}
 	
+	func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+		self.camaraController.dismiss(animated: true)
+		goToHomeScreen()
+	}
+	
 	
 	//RENDER IMAGEN
 	func saveImageToFile(_ image: UIImage) -> URL

@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="797"/>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wmH-FQ-2nE">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="-2" width="393" height="854"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MOT-1d-Z9n">
                                 <rect key="frame" x="40" y="80" width="323" height="772"/>
@@ -36,7 +36,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="MenuElementCell" id="Hw2-08-Dah" customClass="MenuElementCell" customModule="kidenv" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="MenuElementCell" id="Hw2-08-Dah" customClass="MenuElementCell" customModule="Kidenv" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7rQ-WY-fvw">
@@ -77,7 +77,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="showTutorialView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gn-c5-ovL"/>
                                 </connections>
@@ -94,7 +96,7 @@
                             <constraint firstAttribute="trailing" secondItem="MOT-1d-Z9n" secondAttribute="trailing" constant="30" id="OZa-iY-yEk"/>
                             <constraint firstItem="kiE-Fy-CTz" firstAttribute="top" secondItem="7M4-oO-31e" secondAttribute="top" id="QBz-0s-mUF"/>
                             <constraint firstAttribute="bottom" secondItem="Cqh-n7-muH" secondAttribute="bottom" constant="30" id="QFB-t5-DG9"/>
-                            <constraint firstItem="wmH-FQ-2nE" firstAttribute="top" secondItem="7M4-oO-31e" secondAttribute="top" id="feg-lQ-wJi"/>
+                            <constraint firstItem="wmH-FQ-2nE" firstAttribute="top" secondItem="7M4-oO-31e" secondAttribute="top" constant="-2" id="feg-lQ-wJi"/>
                             <constraint firstAttribute="bottom" secondItem="MOT-1d-Z9n" secondAttribute="bottom" id="hjH-gT-jDQ"/>
                             <constraint firstItem="kiE-Fy-CTz" firstAttribute="bottom" secondItem="Cqh-n7-muH" secondAttribute="top" constant="10" id="jGe-xs-n9Q"/>
                             <constraint firstAttribute="bottom" secondItem="wmH-FQ-2nE" secondAttribute="bottom" id="sHG-8a-4FB"/>

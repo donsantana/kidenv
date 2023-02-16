@@ -25,7 +25,7 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, 
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		collectionViewLayout.invalidateLayout()
+		//collectionViewLayout.invalidateLayout()
 		let cellWidthSize = UIScreen.main.bounds.width / 4
 		return CGSize(width: cellWidthSize, height: cellWidthSize)
 	}

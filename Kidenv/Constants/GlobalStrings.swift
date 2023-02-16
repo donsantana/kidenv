@@ -19,6 +19,7 @@ struct GlobalStrings {
 	
 	///Wallpaper images
 	struct WallpapersImages {
+		static let backgroundImage: String = NSLocalizedString("background",comment:"")
 		static let mickeyImage: String = NSLocalizedString("mickey",comment:"")
 		static let minieImage: String = NSLocalizedString("minie",comment:"")
 		static let defaultImage: String = NSLocalizedString("default",comment:"")

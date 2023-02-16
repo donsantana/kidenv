@@ -52,6 +52,7 @@ class PhotoPreviewController: UIViewController {
 	}
 	
 	internal func initUI() {
+		addImageBackground()
 		let swipeLeftGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeGesture(_:)))
 		swipeLeftGesture.direction = .left
 		self.view.addGestureRecognizer(swipeLeftGesture)

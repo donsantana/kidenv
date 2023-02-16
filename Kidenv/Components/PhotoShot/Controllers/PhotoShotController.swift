@@ -17,6 +17,11 @@ class PhotoShotController: UIViewController {
 		self.camaraController = UIImagePickerController()
 		self.camaraController.delegate = self
 		openCamera()
+		initUI()
+	}
+	
+	func initUI() {
+		addImageBackground()
 	}
 	
 	func openCamera() {
@@ -26,11 +31,15 @@ class PhotoShotController: UIViewController {
 		self.present(self.camaraController, animated: true, completion: nil)
 	}
 	
-	@available(iOS 14.0, *)
-	@IBAction func closeBtn(_ sender: Any) {
+	func goToHomeScreen() {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		guard let vc = storyboard.instantiateViewController(withIdentifier: "HomeView") as? HomeController else {return}
 		navigationController?.pushViewController(vc, animated: true)
+	}
+	
+	@available(iOS 14.0, *)
+	@IBAction func closeBtn(_ sender: Any) {
+		goToHomeScreen()
 	}
 	
 }

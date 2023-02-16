@@ -44,13 +44,13 @@ class HomeController:  UIViewController, PHPickerViewControllerDelegate, UIImage
 		}
 	}
 	
-	override func viewDidAppear(_ animated: Bool) {
+	override func viewWillAppear(_ animated: Bool) {
 		navigationController?.setNavigationBarHidden(true, animated: false)
 	}
 	
-	override func viewDidDisappear(_ animated: Bool) {
-		navigationController?.setNavigationBarHidden(false, animated: false)
-	}
+//	override func viewDidDisappear(_ animated: Bool) {
+//		navigationController?.setNavigationBarHidden(false, animated: false)
+//	}
 	
 	static func configureForGuidedAccess(
 			features: UIGuidedAccessAccessibilityFeature,

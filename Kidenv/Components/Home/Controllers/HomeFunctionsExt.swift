@@ -15,6 +15,7 @@ extension HomeController {
 		overrideUserInterfaceStyle = .light
 		
 		showTutorialBtn.setTitle(GlobalStrings.showTutorialTitle, for: .normal)
+		addImageBackground()
 		setBackgroundImage()
 	}
 	
@@ -77,11 +78,11 @@ extension HomeController {
 		
 		let pickerViewController = PHPickerViewController(configuration: config)
 		pickerViewController.navigationItem.hidesBackButton = true
+
 		let backBtn = UIBarButtonItem(image: UIImage(named: "barCloseBtn"), style: .plain, target: self, action: #selector(backBtnAction))
-		backBtn.customView?.backgroundColor = .yellow
 		pickerViewController.navigationItem.setRightBarButton(backBtn, animated: false)
 		pickerViewController.delegate = self
-		
+		navigationController?.setNavigationBarHidden(false, animated: false)
 		navigationController?.show(pickerViewController, sender: nil)
 	}
 	
