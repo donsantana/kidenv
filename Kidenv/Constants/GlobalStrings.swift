@@ -8,7 +8,8 @@
 import Foundation
 
 struct GlobalStrings {
-	static let showTutorialTitle: String = NSLocalizedString("How to active Guide Access?",comment:"")
+	static let showTutorialTitle: String = NSLocalizedString("How to prevent go out from Kidenv?",comment:"")
+	static let showTutorialHeader: String = NSLocalizedString("Please follow this tutorial\n to activate Guided Access.",comment:"")
 	///Buttons images
 	static let settingsBtnTitle: String = NSLocalizedString("settings",comment:"")
 	static let accessibilityBtnTitle: String = NSLocalizedString("accessibility",comment:"")

@@ -48,10 +48,6 @@ class HomeController:  UIViewController, PHPickerViewControllerDelegate, UIImage
 		navigationController?.setNavigationBarHidden(true, animated: false)
 	}
 	
-//	override func viewDidDisappear(_ animated: Bool) {
-//		navigationController?.setNavigationBarHidden(false, animated: false)
-//	}
-	
 	static func configureForGuidedAccess(
 			features: UIGuidedAccessAccessibilityFeature,
 			enabled: Bool,

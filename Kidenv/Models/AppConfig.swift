@@ -21,4 +21,14 @@ struct AppConfig {
 			return UserDefaults().value(forKey: "preferred_cartoon") as? Cartoons
 		}
 	}
+	
+	var isGuidedAccessConfigured: Bool? {
+		set (value) {
+			UserDefaults().set(value, forKey: "guided_access")
+		}
+		get {
+			return UserDefaults().value(forKey: "guidedd_access") as? Bool
+		}
+	}
+	
 }

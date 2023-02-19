@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Kidenv
+
+  Created by Donelkys Santana on 2/16/23.
+  
+*/
+
+"settings" = "configuracion";
+"accessibility" = "accesibilidad";
+"guideAccess" = "accesoGuiado";
+"passcode" = "activarClave";
+"passcodeScreen" = "createClave";
+"deviceSwitch" = "dispositivoSwitch";
+
+"How to prevent go out from Kidenv?" = "¿Cómo evitar salir de Kidenv?";
+"Please follow this tutorial\n to activate Guided Access." = "Por favor siga este tutorial\n para activar el Acceso guiado";

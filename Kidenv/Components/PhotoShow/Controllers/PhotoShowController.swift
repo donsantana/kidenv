@@ -21,7 +21,6 @@ class PhotoShowController: UIViewController, PHPickerViewControllerDelegate, UII
 	
 	@objc func pickPhotos() {
 		var config = PHPickerConfiguration()
-		//	config.selectionLimit = nil
 		config.filter = .images
 		
 		let pickerViewController = PHPickerViewController(configuration: config)

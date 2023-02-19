@@ -7,9 +7,13 @@
 
 import UIKit
 
+struct TutorialImage {
+	var imageName, description: String
+}
+
 class TutorialViewController: UIViewController {
 	
-	var tutorialImagesNames: [String] = [GlobalStrings.settingsBtnTitle,GlobalStrings.accessibilityBtnTitle,GlobalStrings.guideAccessBtnTitle,GlobalStrings.passcodeBtnTitle,GlobalStrings.passcodeScreenBtnTitle,GlobalStrings.deviceSwitchBtnTitle]
+	var tutorialImagesNames: [TutorialImage] = [TutorialImage(imageName: GlobalStrings.settingsBtnTitle,description: GlobalStrings.showTutorialHeader),TutorialImage(imageName: GlobalStrings.accessibilityBtnTitle,description: ""),TutorialImage(imageName: GlobalStrings.guideAccessBtnTitle,description: ""),TutorialImage(imageName: GlobalStrings.passcodeBtnTitle,description: ""),TutorialImage(imageName: GlobalStrings.passcodeScreenBtnTitle,description: ""),TutorialImage(imageName: GlobalStrings.deviceSwitchBtnTitle,description: "")]
 	var frame = CGRect.zero
 
 	lazy var scrollView: UIScrollView = {
@@ -25,7 +29,7 @@ class TutorialViewController: UIViewController {
 		scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: view.bounds.height - 150))
 		scrollView.delegate = self
 		scrollView.isPagingEnabled = true
-		scrollView.showsHorizontalScrollIndicator = false
+		scrollView.showsHorizontalScrollIndicator = true
 		tutorialPageControll.numberOfPages = tutorialImagesNames.count
 		setUpScreen()
 	}
@@ -38,13 +42,17 @@ class TutorialViewController: UIViewController {
 			scrollView.contentMode = .center
 			
 			// 2.
+			let descriptionLabel = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: 60))
+			descriptionLabel.text = tutorialImagesNames[index].description
+			descriptionLabel.addTutorialStyle()
+			descriptionLabel.isHidden = tutorialImagesNames[index].description == ""
+			
 			let imgView = UIImageView(frame: frame)
 			imgView.contentMode = .scaleAspectFit
-			imgView.image = UIImage(named: tutorialImagesNames[index])
+			imgView.image = UIImage(named: tutorialImagesNames[index].imageName)
 			
-			
-
 			self.scrollView.addSubview(imgView)
+			self.scrollView.addSubview(descriptionLabel)
 		}
 		
 		// 3.

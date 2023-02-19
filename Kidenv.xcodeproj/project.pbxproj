@@ -40,6 +40,9 @@
 		C66586D32995A70900FC133D /* PhotoShot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66586D02995A70800FC133D /* PhotoShot.storyboard */; };
 		C66586D42995A70900FC133D /* PhotoShotDelegateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66586D12995A70800FC133D /* PhotoShotDelegateExt.swift */; };
 		C66586D52995A70900FC133D /* PhotoShotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66586D22995A70900FC133D /* PhotoShotController.swift */; };
+		C6AA2C6E299ECFE300AE916C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6AA2C70299ECFE300AE916C /* Localizable.strings */; };
+		C6AA2C7329A022A600AE916C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA2C7229A022A600AE916C /* UILabel.swift */; };
+		C6AA2C7529A023BB00AE916C /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA2C7429A023BB00AE916C /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,12 @@
 		C66586D02995A70800FC133D /* PhotoShot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoShot.storyboard; sourceTree = "<group>"; };
 		C66586D12995A70800FC133D /* PhotoShotDelegateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoShotDelegateExt.swift; sourceTree = "<group>"; };
 		C66586D22995A70900FC133D /* PhotoShotController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoShotController.swift; sourceTree = "<group>"; };
+		C6AA2C69299ECF6300AE916C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		C6AA2C6A299ECF6300AE916C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C6AA2C6F299ECFE300AE916C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C6AA2C71299ECFF400AE916C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C6AA2C7229A022A600AE916C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		C6AA2C7429A023BB00AE916C /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +156,7 @@
 		C665866529959F6300FC133D /* Kidenv */ = {
 			isa = PBXGroup;
 			children = (
+				C6AA2C6D299ECFCB00AE916C /* Localization */,
 				C66586B32995A57800FC133D /* Assets */,
 				C66586A82995A53800FC133D /* Extensions */,
 				C66586A22995A24B00FC133D /* Models */,
@@ -215,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				C66586A02995A21F00FC133D /* GlobalStrings.swift */,
+				C6AA2C7429A023BB00AE916C /* AppColors.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -243,6 +254,7 @@
 				C66586AB2995A56100FC133D /* UIImageView.swift */,
 				C66586AC2995A56100FC133D /* UIView.swift */,
 				C66586AD2995A56100FC133D /* UIViewController.swift */,
+				C6AA2C7229A022A600AE916C /* UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -317,6 +329,14 @@
 				C66586D12995A70800FC133D /* PhotoShotDelegateExt.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C6AA2C6D299ECFCB00AE916C /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				C6AA2C70299ECFE300AE916C /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +425,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = C665865A29959F6300FC133D;
 			productRefGroup = C665866429959F6300FC133D /* Products */;
@@ -428,6 +449,7 @@
 				C665867329959F6600FC133D /* LaunchScreen.storyboard in Resources */,
 				C665867029959F6600FC133D /* Assets.xcassets in Resources */,
 				C66586D32995A70900FC133D /* PhotoShot.storyboard in Resources */,
+				C6AA2C6E299ECFE300AE916C /* Localizable.strings in Resources */,
 				C66586B82995A59800FC133D /* Wallpapers.xcassets in Resources */,
 				C66586B72995A59800FC133D /* Assets.xcassets in Resources */,
 				C66586CB2995A6BB00FC133D /* PhotoShow.storyboard in Resources */,
@@ -461,6 +483,7 @@
 				C66586D52995A70900FC133D /* PhotoShotController.swift in Sources */,
 				C66586B12995A56100FC133D /* UIView.swift in Sources */,
 				C665869C2995A1D100FC133D /* HomeController.swift in Sources */,
+				C6AA2C7529A023BB00AE916C /* AppColors.swift in Sources */,
 				C66586AF2995A56100FC133D /* UIImage.swift in Sources */,
 				C66586A72995A3C200FC133D /* MenuElementCell.swift in Sources */,
 				C66586A42995A26B00FC133D /* AppConfig.swift in Sources */,
@@ -470,6 +493,7 @@
 				C66586A12995A21F00FC133D /* GlobalStrings.swift in Sources */,
 				C66586AE2995A56100FC133D /* UIButton.swift in Sources */,
 				C66586C22995A66800FC133D /* TutorialViewController.swift in Sources */,
+				C6AA2C7329A022A600AE916C /* UILabel.swift in Sources */,
 				C66586D42995A70900FC133D /* PhotoShotDelegateExt.swift in Sources */,
 				C665866729959F6300FC133D /* AppDelegate.swift in Sources */,
 				C665866929959F6300FC133D /* SceneDelegate.swift in Sources */,
@@ -517,6 +541,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C665866D29959F6300FC133D /* Base */,
+				C6AA2C69299ECF6300AE916C /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -525,8 +550,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				C665867229959F6600FC133D /* Base */,
+				C6AA2C6A299ECF6300AE916C /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C6AA2C70299ECFE300AE916C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6AA2C6F299ECFE300AE916C /* es */,
+				C6AA2C71299ECFF400AE916C /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -536,6 +571,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -596,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -653,7 +690,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 48G34LX7UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kidenv/Info.plist;
@@ -663,16 +700,20 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app lets the kid take photos and videos.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "The app provides Face ID as authentication option on Guide Access function.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bocanasa.Kidenv;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bocanasa.kidenv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -686,7 +727,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 48G34LX7UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kidenv/Info.plist;
@@ -696,16 +737,20 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app lets the kid take photos and videos.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "The app provides Face ID as authentication option on Guide Access function.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bocanasa.Kidenv;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bocanasa.kidenv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

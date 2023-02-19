@@ -75,7 +75,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="YeB-hf-ZW9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -140,7 +140,7 @@
                                 </vibrancyEffect>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxd-Kc-VlQ">
-                                <rect key="frame" x="0.0" y="113" width="393" height="661"/>
+                                <rect key="frame" x="0.0" y="113" width="393" height="597"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiB-4U-YQC">
                                 <rect key="frame" x="342" y="57" width="35" height="35"/>
@@ -148,6 +148,7 @@
                                     <constraint firstAttribute="height" constant="35" id="Y7y-tg-2fI"/>
                                     <constraint firstAttribute="width" secondItem="EiB-4U-YQC" secondAttribute="height" multiplier="1:1" id="j77-Iv-2Kp"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="close"/>
                                 <connections>
@@ -155,9 +156,9 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="NOa-OY-jpa">
-                                <rect key="frame" x="20" y="782" width="353" height="26"/>
+                                <rect key="frame" x="20" y="718" width="353" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="TAZ-A8-Xcj"/>
+                                    <constraint firstAttribute="height" constant="90" id="TAZ-A8-Xcj"/>
                                 </constraints>
                                 <color key="pageIndicatorTintColor" red="0.068087771529999994" green="0.1823628843" blue="0.4941481948" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pageControl>

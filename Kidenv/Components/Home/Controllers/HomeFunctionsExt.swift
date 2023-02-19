@@ -13,10 +13,10 @@ extension HomeController {
 	
 	internal func initUI() {
 		overrideUserInterfaceStyle = .light
-		
 		showTutorialBtn.setTitle(GlobalStrings.showTutorialTitle, for: .normal)
 		addImageBackground()
 		setBackgroundImage()
+		
 	}
 	
 	internal func setBackgroundImage() {
