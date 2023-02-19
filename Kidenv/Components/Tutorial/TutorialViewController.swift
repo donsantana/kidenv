@@ -42,7 +42,7 @@ class TutorialViewController: UIViewController {
 			scrollView.contentMode = .center
 			
 			// 2.
-			let descriptionLabel = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: 60))
+			let descriptionLabel = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: 82))
 			descriptionLabel.text = tutorialImagesNames[index].description
 			descriptionLabel.addTutorialStyle()
 			descriptionLabel.isHidden = tutorialImagesNames[index].description == ""

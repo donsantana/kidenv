@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6233E3629A28C88003EFDA1 /* AppStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6233E3529A28C88003EFDA1 /* AppStoreService.swift */; };
+		C6233E3829A28D91003EFDA1 /* ItunesAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6233E3729A28D91003EFDA1 /* ItunesAppInfo.swift */; };
+		C6233E3A29A28DF6003EFDA1 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6233E3929A28DF6003EFDA1 /* GlobalVariables.swift */; };
+		C6233E3D29A28F4E003EFDA1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6233E3C29A28F4E003EFDA1 /* Alert.swift */; };
 		C665866729959F6300FC133D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665866629959F6300FC133D /* AppDelegate.swift */; };
 		C665866929959F6300FC133D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665866829959F6300FC133D /* SceneDelegate.swift */; };
 		C665866B29959F6300FC133D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665866A29959F6300FC133D /* ViewController.swift */; };
@@ -63,6 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6233E3529A28C88003EFDA1 /* AppStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreService.swift; sourceTree = "<group>"; };
+		C6233E3729A28D91003EFDA1 /* ItunesAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAppInfo.swift; sourceTree = "<group>"; };
+		C6233E3929A28DF6003EFDA1 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		C6233E3C29A28F4E003EFDA1 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		C665866329959F6300FC133D /* Kidenv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kidenv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C665866629959F6300FC133D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C665866829959F6300FC133D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6233E3B29A28F3C003EFDA1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C6233E3C29A28F4E003EFDA1 /* Alert.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C665865A29959F6300FC133D = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +172,8 @@
 		C665866529959F6300FC133D /* Kidenv */ = {
 			isa = PBXGroup;
 			children = (
+				C6233E3B29A28F3C003EFDA1 /* Utils */,
+				C682999429A1A40C00D9496E /* Services */,
 				C6AA2C6D299ECFCB00AE916C /* Localization */,
 				C66586B32995A57800FC133D /* Assets */,
 				C66586A82995A53800FC133D /* Extensions */,
@@ -226,6 +244,7 @@
 			children = (
 				C66586A02995A21F00FC133D /* GlobalStrings.swift */,
 				C6AA2C7429A023BB00AE916C /* AppColors.swift */,
+				C6233E3929A28DF6003EFDA1 /* GlobalVariables.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -234,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				C66586A32995A26B00FC133D /* AppConfig.swift */,
+				C6233E3729A28D91003EFDA1 /* ItunesAppInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -329,6 +349,14 @@
 				C66586D12995A70800FC133D /* PhotoShotDelegateExt.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C682999429A1A40C00D9496E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C6233E3529A28C88003EFDA1 /* AppStoreService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C6AA2C6D299ECFCB00AE916C /* Localization */ = {
@@ -482,10 +510,12 @@
 				C66586B22995A56100FC133D /* UIViewController.swift in Sources */,
 				C66586D52995A70900FC133D /* PhotoShotController.swift in Sources */,
 				C66586B12995A56100FC133D /* UIView.swift in Sources */,
+				C6233E3A29A28DF6003EFDA1 /* GlobalVariables.swift in Sources */,
 				C665869C2995A1D100FC133D /* HomeController.swift in Sources */,
 				C6AA2C7529A023BB00AE916C /* AppColors.swift in Sources */,
 				C66586AF2995A56100FC133D /* UIImage.swift in Sources */,
 				C66586A72995A3C200FC133D /* MenuElementCell.swift in Sources */,
+				C6233E3D29A28F4E003EFDA1 /* Alert.swift in Sources */,
 				C66586A42995A26B00FC133D /* AppConfig.swift in Sources */,
 				C66586B02995A56100FC133D /* UIImageView.swift in Sources */,
 				C665866B29959F6300FC133D /* ViewController.swift in Sources */,
@@ -493,6 +523,7 @@
 				C66586A12995A21F00FC133D /* GlobalStrings.swift in Sources */,
 				C66586AE2995A56100FC133D /* UIButton.swift in Sources */,
 				C66586C22995A66800FC133D /* TutorialViewController.swift in Sources */,
+				C6233E3829A28D91003EFDA1 /* ItunesAppInfo.swift in Sources */,
 				C6AA2C7329A022A600AE916C /* UILabel.swift in Sources */,
 				C66586D42995A70900FC133D /* PhotoShotDelegateExt.swift in Sources */,
 				C665866729959F6300FC133D /* AppDelegate.swift in Sources */,
@@ -501,6 +532,7 @@
 				C66586CC2995A6BB00FC133D /* PhotoShowController.swift in Sources */,
 				C665869E2995A1D100FC133D /* HomeFunctionsExt.swift in Sources */,
 				C665869D2995A1D100FC133D /* HomeCollectionExt.swift in Sources */,
+				C6233E3629A28C88003EFDA1 /* AppStoreService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,7 +722,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 48G34LX7UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kidenv/Info.plist;
@@ -727,7 +759,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 48G34LX7UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kidenv/Info.plist;

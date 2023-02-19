@@ -13,5 +13,12 @@
 "passcodeScreen" = "createClave";
 "deviceSwitch" = "dispositivoSwitch";
 
+"Ok" = "Ok";
+"Yes" = "Si";
+"No" = "No";
+"Cancel" = "Cancelar";
+"Application version" = "Version de la Aplicación";
+"Dear customer, it is necessary to update to the latest version of the application available in the AppStore. Do you want to do it at this time?" = "Estimado cliente es necesario que actualice a la última versión de la aplicación disponible en la AppStore. ¿Desea hacerlo en este momento?";
+
 "How to prevent go out from Kidenv?" = "¿Cómo evitar salir de Kidenv?";
-"Please follow this tutorial\n to activate Guided Access." = "Por favor siga este tutorial\n para activar el Acceso guiado";
+"Please follow this tutorial\n to activate Guided Access.\n Swipe to right.->" = "Por favor siga este tutorial\n para activar el Acceso guiado.\n Deslice hacia la derecha.->";

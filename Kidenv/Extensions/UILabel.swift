@@ -11,7 +11,7 @@ extension UILabel {
 	func addTutorialStyle() {
 		self.textAlignment = .center
 		self.clipsToBounds = true
-		self.numberOfLines = 2
+		self.numberOfLines = 3
 		self.layer.cornerRadius = 10
 		self.font = UIFont(name: "Helvetica Neue", size: 21)
 		self.textColor = AppColors.secondaryColor

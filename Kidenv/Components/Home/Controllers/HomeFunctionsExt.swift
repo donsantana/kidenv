@@ -16,7 +16,6 @@ extension HomeController {
 		showTutorialBtn.setTitle(GlobalStrings.showTutorialTitle, for: .normal)
 		addImageBackground()
 		setBackgroundImage()
-		
 	}
 	
 	internal func setBackgroundImage() {
@@ -62,6 +61,10 @@ extension HomeController {
 		let tutorialViewController = storyboard?.instantiateViewController(withIdentifier: "tutorialViewController") as! TutorialViewController
 		self.addChild(tutorialViewController)
 		self.view.addSubview(tutorialViewController.view)
+	}
+	
+	func checkForNewVersions() {
+		appStoreService.checkNewVersionAvailable()
 	}
 	
 	// MARK: - PHPickerViewController
