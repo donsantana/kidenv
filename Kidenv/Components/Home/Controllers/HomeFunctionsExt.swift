@@ -63,6 +63,12 @@ extension HomeController {
 		self.view.addSubview(tutorialViewController.view)
 	}
 	
+	func showCallScreen() {
+		let storyboard = UIStoryboard(name: "CallSimulator", bundle: nil)
+		let callVC = storyboard.instantiateViewController(withIdentifier: "callSimulatorView") as! CallSimulatorController
+		navigationController?.pushViewController(callVC, animated: true)
+	}
+	
 	func checkForNewVersions() {
 		appStoreService.checkNewVersionAvailable()
 	}

@@ -11,6 +11,11 @@
 		C6233E3829A28D91003EFDA1 /* ItunesAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6233E3729A28D91003EFDA1 /* ItunesAppInfo.swift */; };
 		C6233E3A29A28DF6003EFDA1 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6233E3929A28DF6003EFDA1 /* GlobalVariables.swift */; };
 		C6233E3D29A28F4E003EFDA1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6233E3C29A28F4E003EFDA1 /* Alert.swift */; };
+		C62AE69C29E88FB500C0FC1E /* CallSimulator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62AE69B29E88FB500C0FC1E /* CallSimulator.storyboard */; };
+		C62AE69F29E891AC00C0FC1E /* CallSimulatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62AE69E29E891AC00C0FC1E /* CallSimulatorController.swift */; };
+		C62AE6A229E8989600C0FC1E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62AE6A129E8989600C0FC1E /* Contact.swift */; };
+		C62AE6A529E99CF900C0FC1E /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62AE6A429E99CF900C0FC1E /* ContactService.swift */; };
+		C62AE6A829E9A51500C0FC1E /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62AE6A729E9A51500C0FC1E /* ContactCell.swift */; };
 		C665866729959F6300FC133D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665866629959F6300FC133D /* AppDelegate.swift */; };
 		C665866929959F6300FC133D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665866829959F6300FC133D /* SceneDelegate.swift */; };
 		C665866B29959F6300FC133D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665866A29959F6300FC133D /* ViewController.swift */; };
@@ -71,6 +76,11 @@
 		C6233E3729A28D91003EFDA1 /* ItunesAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAppInfo.swift; sourceTree = "<group>"; };
 		C6233E3929A28DF6003EFDA1 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		C6233E3C29A28F4E003EFDA1 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		C62AE69B29E88FB500C0FC1E /* CallSimulator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CallSimulator.storyboard; sourceTree = "<group>"; };
+		C62AE69E29E891AC00C0FC1E /* CallSimulatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSimulatorController.swift; sourceTree = "<group>"; };
+		C62AE6A129E8989600C0FC1E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		C62AE6A429E99CF900C0FC1E /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
+		C62AE6A729E9A51500C0FC1E /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		C665866329959F6300FC133D /* Kidenv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kidenv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C665866629959F6300FC133D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C665866829959F6300FC133D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +159,50 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C62AE69A29E88F9100C0FC1E /* CallSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				C62AE6A629E9A4F400C0FC1E /* Views */,
+				C62AE6A329E99CD500C0FC1E /* Services */,
+				C62AE6A029E8988700C0FC1E /* Models */,
+				C62AE69B29E88FB500C0FC1E /* CallSimulator.storyboard */,
+				C62AE69D29E88FC200C0FC1E /* Controllers */,
+			);
+			path = CallSimulator;
+			sourceTree = "<group>";
+		};
+		C62AE69D29E88FC200C0FC1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C62AE69E29E891AC00C0FC1E /* CallSimulatorController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C62AE6A029E8988700C0FC1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C62AE6A129E8989600C0FC1E /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C62AE6A329E99CD500C0FC1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C62AE6A429E99CF900C0FC1E /* ContactService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C62AE6A629E9A4F400C0FC1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C62AE6A729E9A51500C0FC1E /* ContactCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C665865A29959F6300FC133D = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +265,7 @@
 		C66586962995A15000FC133D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C62AE69A29E88F9100C0FC1E /* CallSimulator */,
 				C66586CE2995A6DE00FC133D /* PhotoShot */,
 				C66586C32995A67C00FC133D /* PhotoShow */,
 				C66586C02995A63A00FC133D /* Tutorial */,
@@ -479,6 +534,7 @@
 				C66586D32995A70900FC133D /* PhotoShot.storyboard in Resources */,
 				C6AA2C6E299ECFE300AE916C /* Localizable.strings in Resources */,
 				C66586B82995A59800FC133D /* Wallpapers.xcassets in Resources */,
+				C62AE69C29E88FB500C0FC1E /* CallSimulator.storyboard in Resources */,
 				C66586B72995A59800FC133D /* Assets.xcassets in Resources */,
 				C66586CB2995A6BB00FC133D /* PhotoShow.storyboard in Resources */,
 				C665866E29959F6300FC133D /* Main.storyboard in Resources */,
@@ -511,8 +567,11 @@
 				C66586D52995A70900FC133D /* PhotoShotController.swift in Sources */,
 				C66586B12995A56100FC133D /* UIView.swift in Sources */,
 				C6233E3A29A28DF6003EFDA1 /* GlobalVariables.swift in Sources */,
+				C62AE69F29E891AC00C0FC1E /* CallSimulatorController.swift in Sources */,
 				C665869C2995A1D100FC133D /* HomeController.swift in Sources */,
 				C6AA2C7529A023BB00AE916C /* AppColors.swift in Sources */,
+				C62AE6A529E99CF900C0FC1E /* ContactService.swift in Sources */,
+				C62AE6A229E8989600C0FC1E /* Contact.swift in Sources */,
 				C66586AF2995A56100FC133D /* UIImage.swift in Sources */,
 				C66586A72995A3C200FC133D /* MenuElementCell.swift in Sources */,
 				C6233E3D29A28F4E003EFDA1 /* Alert.swift in Sources */,
@@ -533,6 +592,7 @@
 				C665869E2995A1D100FC133D /* HomeFunctionsExt.swift in Sources */,
 				C665869D2995A1D100FC133D /* HomeCollectionExt.swift in Sources */,
 				C6233E3629A28C88003EFDA1 /* AppStoreService.swift in Sources */,
+				C62AE6A829E9A51500C0FC1E /* ContactCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,7 +782,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 48G34LX7UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kidenv/Info.plist;
@@ -730,6 +790,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "The app gives the kid, with \"read-only\" permission level, show and navigate over the photos and videos.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app lets the kid take photos and videos.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "The app need contact acces to be used on Call Simulator feature";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "The app provides Face ID as authentication option on Guide Access function.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -740,7 +801,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bocanasa.kidenv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -759,7 +820,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 48G34LX7UB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kidenv/Info.plist;
@@ -767,6 +828,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "The app gives the kid, with \"read-only\" permission level, show and navigate over the photos and videos.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app lets the kid take photos and videos.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "The app need contact acces to be used on Call Simulator feature";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "The app provides Face ID as authentication option on Guide Access function.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -777,7 +839,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bocanasa.kidenv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

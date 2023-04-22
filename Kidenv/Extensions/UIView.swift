@@ -36,5 +36,17 @@ extension UIView {
 		self.layer.shadowOffset = CGSize.zero
 		self.layer.shadowRadius = 20
 	}
+	
+	func addImageBackground(imageName: String? = nil) {
+		if let imageBackground = UIImage(named: imageName ?? GlobalStrings.WallpapersImages.backgroundImage) {
+			UIGraphicsBeginImageContext(self.frame.size)
+			imageBackground.draw(in: self.frame)
+			let image = UIGraphicsGetImageFromCurrentImageContext()
+			UIGraphicsEndImageContext()
+			if let image = image {
+				self.backgroundColor = UIColor(patternImage: image)
+			}
+		}
+	}
 }
 

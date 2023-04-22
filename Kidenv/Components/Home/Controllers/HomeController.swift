@@ -17,7 +17,7 @@ class HomeController:  UIViewController, PHPickerViewControllerDelegate, UIImage
 	
 	let appStoreService = AppStoreService.shared
 	
-	let menuElements:[MenuElement] = [MenuElement(imageName: "showBtn", name: "show"), MenuElement(imageName: "shotBtn", name: "shot"), MenuElement(imageName: "videoBtn", name: "video"), MenuElement(imageName: "settingsBtn", name: "settings")]
+	let menuElements:[MenuElement] = [MenuElement(imageName: "showBtn", name: "show"), MenuElement(imageName: "shotBtn", name: "shot"), MenuElement(imageName: "videoBtn", name: "video"), MenuElement(imageName: "callBtn", name: "call"), MenuElement(imageName: "settingsBtn", name: "settings")]
 
 	@IBOutlet weak var homeStackView: UIStackView!
 	@IBOutlet weak var showTutorialBtn: UIButton!

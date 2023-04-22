@@ -39,9 +39,9 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, 
 		case 2:
 			openVideoGallery()
 		case 3:
-			//showWallpaperScreen()
-			showTutorialScreen()
+			showCallScreen()
 		default:
+			showTutorialScreen()
 			break
 		}
 	}
