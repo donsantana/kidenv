@@ -789,7 +789,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Kidenv;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "The app gives the kid, with \"read-only\" permission level, show and navigate over the photos and videos.";
-				INFOPLIST_KEY_NSCameraUsageDescription = "The app lets the kid take photos and videos.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kidenv required a camera access to permit the kid take photos or make videos, but those files are not stored in your device.";
 				INFOPLIST_KEY_NSContactsUsageDescription = "The app need contact acces to be used on Call Simulator feature";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "The app provides Face ID as authentication option on Guide Access function.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -801,7 +801,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bocanasa.kidenv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -827,7 +827,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Kidenv;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "The app gives the kid, with \"read-only\" permission level, show and navigate over the photos and videos.";
-				INFOPLIST_KEY_NSCameraUsageDescription = "The app lets the kid take photos and videos.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kidenv required a camera access to permit the kid take photos or make videos, but those files are not stored in your device.";
 				INFOPLIST_KEY_NSContactsUsageDescription = "The app need contact acces to be used on Call Simulator feature";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "The app provides Face ID as authentication option on Guide Access function.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -839,7 +839,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bocanasa.kidenv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

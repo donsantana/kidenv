@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="-2" width="393" height="854"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MOT-1d-Z9n">
-                                <rect key="frame" x="40" y="80" width="323" height="772"/>
+                                <rect key="frame" x="30" y="80" width="333" height="772"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="R4B-pw-Fln">
                                     <size key="itemSize" width="128" height="128"/>
@@ -43,7 +43,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6hO-g4-YK0">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6hO-g4-YK0">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                 </imageView>
                                             </subviews>
@@ -91,7 +91,7 @@
                             <constraint firstItem="MOT-1d-Z9n" firstAttribute="top" secondItem="7M4-oO-31e" secondAttribute="top" constant="80" id="4bj-du-PLb"/>
                             <constraint firstItem="kiE-Fy-CTz" firstAttribute="leading" secondItem="7M4-oO-31e" secondAttribute="leading" id="Bj8-1b-Cr0"/>
                             <constraint firstItem="Cqh-n7-muH" firstAttribute="leading" secondItem="7M4-oO-31e" secondAttribute="leading" constant="10" id="FvT-BG-Sjy"/>
-                            <constraint firstItem="MOT-1d-Z9n" firstAttribute="leading" secondItem="7M4-oO-31e" secondAttribute="leading" constant="40" id="G3m-ly-ScW"/>
+                            <constraint firstItem="MOT-1d-Z9n" firstAttribute="leading" secondItem="7M4-oO-31e" secondAttribute="leading" constant="30" id="G3m-ly-ScW"/>
                             <constraint firstItem="wmH-FQ-2nE" firstAttribute="leading" secondItem="7M4-oO-31e" secondAttribute="leading" id="Ivt-Gx-8DK"/>
                             <constraint firstAttribute="trailing" secondItem="MOT-1d-Z9n" secondAttribute="trailing" constant="30" id="OZa-iY-yEk"/>
                             <constraint firstItem="kiE-Fy-CTz" firstAttribute="top" secondItem="7M4-oO-31e" secondAttribute="top" id="QBz-0s-mUF"/>
