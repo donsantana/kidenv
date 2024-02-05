@@ -7,6 +7,7 @@
 
 import UIKit
 import PhotosUI
+import SwiftUI
 
 @available(iOS 14.0, *)
 extension HomeController {
@@ -41,6 +42,11 @@ extension HomeController {
 	internal func openVideoGallery() {
 		pickLibraryMedia(.videos)
 	}
+    
+    internal func openDrawingView() {
+        let drawingController = UIHostingController(rootView: DrawingView(parent: self))
+        present(drawingController, animated: true)
+    }
 	
 	func verifyCameraAccess() -> Bool {
 		return UIImagePickerController.isSourceTypeAvailable(.camera)

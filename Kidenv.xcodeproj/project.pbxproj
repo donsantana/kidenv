@@ -47,6 +47,8 @@
 		C6AA2C6E299ECFE300AE916C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6AA2C70299ECFE300AE916C /* Localizable.strings */; };
 		C6AA2C7329A022A600AE916C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA2C7229A022A600AE916C /* UILabel.swift */; };
 		C6AA2C7529A023BB00AE916C /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA2C7429A023BB00AE916C /* AppColors.swift */; };
+		F4FD02AD2B6FDD4D00324659 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD02AC2B6FDD4D00324659 /* DrawingView.swift */; };
+		F4FD02AF2B6FE17B00324659 /* MyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD02AE2B6FE17B00324659 /* MyCanvas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		C6AA2C71299ECFF400AE916C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C6AA2C7229A022A600AE916C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		C6AA2C7429A023BB00AE916C /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		F4FD02AC2B6FDD4D00324659 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		F4FD02AE2B6FE17B00324659 /* MyCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCanvas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,7 @@
 		C66586962995A15000FC133D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F4FD02AB2B6FDD2D00324659 /* Drawing */,
 				C66586CE2995A6DE00FC133D /* PhotoShot */,
 				C66586C32995A67C00FC133D /* PhotoShow */,
 				C66586C02995A63A00FC133D /* Tutorial */,
@@ -367,6 +372,15 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		F4FD02AB2B6FDD2D00324659 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				F4FD02AC2B6FDD4D00324659 /* DrawingView.swift */,
+				F4FD02AE2B6FE17B00324659 /* MyCanvas.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -509,10 +523,12 @@
 				C66586CD2995A6BB00FC133D /* PhotoPreviewController.swift in Sources */,
 				C66586B22995A56100FC133D /* UIViewController.swift in Sources */,
 				C66586D52995A70900FC133D /* PhotoShotController.swift in Sources */,
+				F4FD02AF2B6FE17B00324659 /* MyCanvas.swift in Sources */,
 				C66586B12995A56100FC133D /* UIView.swift in Sources */,
 				C6233E3A29A28DF6003EFDA1 /* GlobalVariables.swift in Sources */,
 				C665869C2995A1D100FC133D /* HomeController.swift in Sources */,
 				C6AA2C7529A023BB00AE916C /* AppColors.swift in Sources */,
+				F4FD02AD2B6FDD4D00324659 /* DrawingView.swift in Sources */,
 				C66586AF2995A56100FC133D /* UIImage.swift in Sources */,
 				C66586A72995A3C200FC133D /* MenuElementCell.swift in Sources */,
 				C6233E3D29A28F4E003EFDA1 /* Alert.swift in Sources */,
