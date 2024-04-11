@@ -41,4 +41,9 @@ struct GlobalStrings {
 		static var storeBundleURL = "http://itunes.apple.com/lookup?bundleId=com.bocanasa.kidenv"
 		static var itunesURL = "itms://itunes.apple.com/us/app/apple-store/id1671059805?mt=8"
 	}
+    
+    struct Google {
+        static var API_KEY = "AIzaSyBYPnJSqR96_stPXHy9jemi3COAZIOK2HY"
+        static var API_ID = "a1dedcae65e574604"
+    }
 }

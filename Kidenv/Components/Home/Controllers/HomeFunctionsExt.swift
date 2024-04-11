@@ -47,6 +47,16 @@ extension HomeController {
         let drawingController = UIHostingController(rootView: DrawingView(parent: self))
         present(drawingController, animated: true)
     }
+    
+    internal func openSearchKidView() {
+        let searchController = UIHostingController(rootView: SearchingMenuView(parent: self))
+        present(searchController, animated: true)
+    }    
+    
+    internal func openSightWordsView() {
+        let sightWordController = UIHostingController(rootView: SightWordView(parent: self))
+        present(sightWordController, animated: true)
+    }
 	
 	func verifyCameraAccess() -> Bool {
 		return UIImagePickerController.isSourceTypeAvailable(.camera)

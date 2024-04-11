@@ -31,17 +31,22 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, 
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		switch indexPath.row {
-		case 0:
+        let menuElementSelected = menuElements[indexPath.row]
+        switch menuElementSelected.name {
+		case "show":
 			openPhotoGallery()
-		case 1:
+		case "shot":
 			openCamera()
-		case 2:
+		case "video":
 			openVideoGallery()
-		case 3:
+		case "drawing":
             openDrawingView()
-        case 4:
-			//showWallpaperScreen()
+        case "search":
+            //showWallpaperScreen()
+            openSearchKidView()
+        case "sightWords":
+            openSightWordsView()
+        case "settings":
 			showTutorialScreen()
 		default:
 			break

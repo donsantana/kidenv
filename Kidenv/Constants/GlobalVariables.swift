@@ -11,3 +11,7 @@ import Foundation
 struct GlobalVariables {
 	static var newVersionAvailable: Bool = false
 }
+
+//struct AppConfiguration {
+//    static
+//}

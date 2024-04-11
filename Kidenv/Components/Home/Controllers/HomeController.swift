@@ -10,6 +10,7 @@ import PhotosUI
 
 struct MenuElement {
 	var imageName,name: String
+    var isActivated: Bool = true
 }
 
 @available(iOS 14.0, *)
@@ -17,11 +18,13 @@ class HomeController:  UIViewController, PHPickerViewControllerDelegate, UIImage
 	
 	let appStoreService = AppStoreService.shared
 	
-	let menuElements:[MenuElement] = [MenuElement(imageName: "showBtn", name: "show"),
-                                      MenuElement(imageName: "shotBtn", name: "shot"),
-                                      MenuElement(imageName: "videoBtn", name: "video"),
-                                      MenuElement(imageName: "drawingBtn", name: "drawing"),
-                                      MenuElement(imageName: "settingsBtn", name: "settings")]
+    var menuElements: [MenuElement] {[MenuElement(imageName: "showBtn", name: "show"),
+                                       MenuElement(imageName: "shotBtn", name: "shot"),
+                                       MenuElement(imageName: "videoBtn", name: "video"),
+                                       MenuElement(imageName: "drawingBtn", name: "drawing"),
+                                       MenuElement(imageName: "searchBtn", name: "searchKid",isActivated: false),
+                                       MenuElement(imageName: "wordsBtn", name: "sightWords"),
+                                       MenuElement(imageName: "settingsBtn", name: "settings")].filter({$0.isActivated})}
 
 	@IBOutlet weak var homeStackView: UIStackView!
 	@IBOutlet weak var showTutorialBtn: UIButton!
