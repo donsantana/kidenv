@@ -18,6 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationDidEnterBackground(_ application: UIApplication) {
 		print("hereeeeeee")
 	}
+    
+    var guidedAccessRestrictionIdentifiers: [String]? {
+        return ["com.reading-observatory.account-settings-restriction"]
+    }
+    
+    func textForGuidedAccessRestriction(withIdentifier restrictionIdentifier: String) -> String? {
+        return "Access Settings"
+    }
+    
+    func detailTextForGuidedAccessRestriction(withIdentifier restrictionIdentifier: String) -> String? {
+        return "Restrict account settings access"
+    }
+    
 
 //	// MARK: UISceneSession Lifecycle
 //

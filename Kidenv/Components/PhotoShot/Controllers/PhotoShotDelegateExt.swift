@@ -27,8 +27,7 @@ extension PhotoShotController: UINavigationControllerDelegate, UIImagePickerCont
 	
 	
 	//RENDER IMAGEN
-	func saveImageToFile(_ image: UIImage) -> URL
-	{
+	func saveImageToFile(_ image: UIImage) -> URL {
 		let filemgr = FileManager.default
 		
 		let dirPaths = filemgr.urls(for: .documentDirectory,

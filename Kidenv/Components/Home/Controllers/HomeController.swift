@@ -42,12 +42,13 @@ class HomeController:  UIViewController, PHPickerViewControllerDelegate, UIImage
 		appStoreService.delegate = self
 		checkForNewVersions()
 		initUI()
+        
 		if UIAccessibility.isGuidedAccessEnabled {
-			print("Request guided access success \(UIAccessibility.isGuidedAccessEnabled)")
+			print("Request guided access \(UIAccessibility.isGuidedAccessEnabled)")
 		} else {
 			UIAccessibility.requestGuidedAccessSession(enabled: true) {
 					success in
-				print("Request guided access success \(success)")
+                print("Request guided access success \(success)")
 				HomeController.configureForGuidedAccess(features: UIGuidedAccessAccessibilityFeature.assistiveTouch, enabled: true, completionHandler: { _,_  in
 					
 				})

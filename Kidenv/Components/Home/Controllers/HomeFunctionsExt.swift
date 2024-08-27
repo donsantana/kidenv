@@ -44,8 +44,11 @@ extension HomeController {
 	}
     
     internal func openDrawingView() {
-        let drawingController = UIHostingController(rootView: DrawingView(parent: self))
-        present(drawingController, animated: true)
+        UIAccessibility.requestGuidedAccessSession(enabled: true) { didSucceed in
+            print("Disable App Lock request - \(didSucceed ? "Succeeded" : "Failed")")
+        }
+//        let drawingController = UIHostingController(rootView: DrawingView(parent: self))
+//        present(drawingController, animated: true)
     }
     
     internal func openSearchKidView() {
